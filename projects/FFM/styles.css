@@ -1,0 +1,221 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.full-size {
+    height: 100%;
+    width: 100%;
+}
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    text-align: center;
+}
+
+.vh-50 {
+    height: 50vh;
+}
+
+/* Header Styles */
+header {
+    background-color: #0077b6; /* Dark blue background color */
+    color: #fff; /* White text color */
+    padding: 10px 0;
+}
+
+.logo {
+    width: auto;
+    height: auto;
+    max-height: 50px;
+    padding-right: 25px;
+}
+
+.head {
+    background-image: url(images/background-vid.mov);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    position: absolute;
+    object-fit: cover;
+    height: 45vh;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Sections Styles */
+section {
+    padding: 20px;
+    position: relative;
+}
+
+.roundedImage{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.roundedImage img{
+    width: 100%;
+    height: auto;
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(107% + 1.3px);
+    height: 34px;
+}
+
+.wave .shape-fill {
+    --bs-bg-opacity: 1;
+    fill: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+}
+
+.wave-sermons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-sermons svg {
+    position: relative;
+    display: block;
+    width: calc(107% + 1.3px);
+    height: 34px;
+}
+
+.wave-sermons .shape-fill {
+    fill: white
+}
+
+.wave-contact {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave-contact svg {
+    position: relative;
+    display: block;
+    width: calc(107% + 1.3px);
+    height: 34px;
+}
+
+.wave-contact .shape-fill {
+    fill: white;
+}
+
+/* Welcome Section Styles */
+#welcome {
+    position: relative;
+    background-color: #00000055;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+/* Services Section Styles */
+#services {
+    position: relative;
+    padding: 5px;
+    background-color: #00000055;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+/* counciling syles */
+.councMain{
+    font-size: 1.25em;
+}
+
+#services-home ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Sermons Section Styles */
+#sermons {
+    background-image: url(images/background-2.png);
+    background-position: center;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#sermons-home::-webkit-scrollbar {
+    display: none;
+  }
+
+#sermons-home {
+    overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.sermon-home {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* contact us Styles*/
+iframe {
+    width: 100%;
+    height: 75vh;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0077b6;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 35vh;
+}
