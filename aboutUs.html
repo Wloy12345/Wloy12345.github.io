@@ -3,19 +3,17 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="main.js" defer></script>
-
-  <script src="tomatoSpin.js" defer></script>
-  <title>PK Patch</title>
-  <script type="module" crossorigin src="/assets/index-CQCyKy-4.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-CGjTp7qM.css">
+  <script src="jquery.visible.min.js" defer></script>
+  <script src="main.js" defer></script>
+  <script src="runtime.js"></script>
   <title>About Us</title>
+  <script type="module" crossorigin src="/assets/about-B2khjjo0.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/GLTFLoader-BY_gAPeX.js">
+  <link rel="stylesheet" crossorigin href="/assets/GLTFLoader-B1Zdg_0_.css">
 </head>
 
 <body>
@@ -25,7 +23,7 @@
       <div class="container-fluid flex-nowrap">
         <div class="container">
           <a class="navbar-brand" href="index.html">
-            <img src="images/logo-hollow-white.png" alt="logo" class="d-inline-block w-25">
+            <img src="/assets/logo-hollow-white-59KD4BKQ.png" alt="logo" class="d-inline-block w-25">
           </a>
         </div>
         <div class="container-fluid d-flex justify-content-end">
@@ -58,12 +56,12 @@
   </div>
 
   <!-- Our Mission section -->
-  <div class="text-secondary  d-flex align-items-center">
+  <div class="text-secondary  d-flex align-items-center vh-100 position-relative">
+    <canvas id="tomato"></canvas>
     <div class="container text-center">
       <div class="row">
         <div class="col-md-6">
-          <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.51/build/spline-viewer.js"></script>
-          <spline-viewer url="https://prod.spline.design/qvpZU2qmsOqp5a18/scene.splinecode"></spline-viewer>
+          <canvas id="addTomato"></canvas>
         </div>
         <div class="col-md-6 d-flex flex-column justify-content-center">
           <h2>Our Mission</h2>
@@ -114,7 +112,7 @@
   <div class="text-center container">
     <div class="row  justify-content-evenly align-items-center fadeIn">
       <div class="col-md-4">
-        <img src="images/mem1.png" alt="team member 1" class="img-fluid rounded-circle bdImg" width="250px">
+        <img src="/assets/mem1-osbrOU1e.png" alt="team member 1" class="img-fluid rounded-circle bdImg" width="250px">
         <h3>John Doe</h3>
       </div>
       <div class="col-md-4">
@@ -144,7 +142,7 @@
             maximize their harvest yields.</p>
         </div>
         <div class="col-md-4">
-          <img src="images/mem2.png" alt="team member 2" class="img-fluid rounded-circle bdImg">
+          <img src="/assets/mem2-DzxOgbb0.png" alt="team member 2" class="img-fluid rounded-circle bdImg">
           <h3>Jane Smith</h3>
         </div>
       </div>
@@ -159,7 +157,7 @@
   <div class="text-center container">
     <div class="row  justify-content-evenly align-items-center fadeIn">
       <div class="col-md-4">
-        <img src="images/mem3.png" alt="team member 3" class="img-fluid rounded-circle bdImg">
+        <img src="/assets/mem3-wphCLY-l.png" alt="team member 3" class="img-fluid rounded-circle bdImg">
         <h3>Michael Johnson</h3>
       </div>
       <div class="col-md-4">
@@ -190,7 +188,7 @@
             discover the value of our crop management application.</p>
         </div>
         <div class="col-md-4">
-          <img src="images/mem4.png" alt="team member 4" class="img-fluid rounded-circle bdImg">
+          <img src="/assets/mem4-DwBSGcoj.png" alt="team member 4" class="img-fluid rounded-circle bdImg">
           <h3>Emily Brown</h3>
         </div>
       </div>
@@ -205,7 +203,7 @@
   <div class="text-center container mb-5">
     <div class="row vh-100 justify-content-center align-items-start align-content-start fadeIn">
       <div class="col-md-4">
-        <img src="images/mem5.png" alt="team member 5" class="img-fluid rounded-circle bdImg">
+        <img src="/assets/mem5-COasQopG.png" alt="team member 5" class="img-fluid rounded-circle bdImg">
         <h3>David Wilson</h3>
       </div>
       <div class="col-md-4">

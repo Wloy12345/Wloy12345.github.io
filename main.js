@@ -65,3 +65,18 @@ $(document).ready(function() {
     });
   });
 });
+
+// add id #tomatoSpin to id #addSpin when viewport is less than 768px and remove id #pumpkin from canvas
+$(document).ready(function() {
+  if ($(window).width() <= 768) {
+    $('#addPumpkin').attr('id', 'pumpkinSpin');
+    $('#pumpkin').addClass('d-none');
+  }
+});
+
+$(document).ready(function() {
+  if ($(window).width() <= 768) {
+    $('#addTomato').attr('id', 'tomatoSpin');
+    $('#tomato').addClass('d-none');
+  }
+});
