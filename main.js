@@ -82,3 +82,15 @@ $(document).ready(function() {
     $('#tomato').addClass('d-none');
   }
 });
+
+
+// replace class of bi-caret-down to bi-caret-down-fill whev hovering over the element
+$(document).ready(function() {
+  $('.bi-caret-down').hover(function() {
+    $(this).removeClass('bi-caret-down');
+    $(this).addClass('bi-caret-down-fill');
+  }, function() {
+    $(this).removeClass('bi-caret-down-fill');
+    $(this).addClass('bi-caret-down');
+  });
+});
