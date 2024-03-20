@@ -109,3 +109,37 @@ const elements = document.querySelectorAll('.hiddenPic');
 elements.forEach(element => {
   observer.observe(element);
 });
+
+// Intersecting Observer 2
+const observer2 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry)
+    if (entry.isIntersecting) {
+      entry.target.classList.add('showFind');
+    } else {
+      entry.target.classList.remove('showFind');
+    }
+  });
+});
+
+const elements2 = document.querySelectorAll('.hiddenFind');
+elements2.forEach(element => {
+  observer2.observe(element);
+});
+
+// Intersecting Observer 3
+const observer3 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry)
+    if (entry.isIntersecting) {
+      entry.target.classList.add('cursorMove');
+    } else {
+      entry.target.classList.remove('cursorMove');
+    }
+  });
+});
+
+const elements3 = document.querySelectorAll('.cursorHidden');
+elements3.forEach(element => {
+  observer3.observe(element);
+});
