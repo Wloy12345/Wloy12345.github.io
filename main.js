@@ -184,4 +184,3 @@ elements5.forEach(element => {
   observer5.observe(element);
 });
 
-
