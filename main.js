@@ -1,9 +1,13 @@
-var mybutton = document.getElementById("BackTop");
-
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome
+}
+
+// when user clicks on the button, scroll to Id scrollTo
+function scrollDown() {
+  var element = document.getElementById("scrollTo");
+  element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
 }
 
 // when element is in view, add class
