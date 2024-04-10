@@ -70,6 +70,13 @@ $(document).ready(function () {
   });
 });
 
+// when window is less than 768px, add class to element
+$(document).ready(function () {
+  if ($(window).width() <= 768) {
+    $('#pumpkin').addClass('d-none');
+    $('#tomato').addClass('d-none');
+  }
+});
 
 // replace class of bi-caret-down to bi-caret-down-fill whev hovering over the element
 $(document).ready(function () {
