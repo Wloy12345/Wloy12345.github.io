@@ -70,23 +70,6 @@ $(document).ready(function () {
   });
 });
 
-// add id #tomatoSpin to id #addSpin when viewport is less than 768px and remove id #pumpkin from canvas
-$(document).ready(function () {
-  if ($(window).width() <= 768) {
-    $('#pumpkinSpin').removeClass('index-2');
-    $('#pumpkinSpin').addClass('index1');
-    $('#pumpkin').addClass('d-none');
-  }
-});
-
-$(document).ready(function () {
-  if ($(window).width() <= 768) {
-    $('#tomatoSpin').removeClass('index-2');
-    $('#tomatoSpin').addClass('index1');
-    $('#tomato').addClass('d-none');
-  }
-});
-
 
 // replace class of bi-caret-down to bi-caret-down-fill whev hovering over the element
 $(document).ready(function () {
@@ -187,4 +170,3 @@ const elements5 = document.querySelectorAll('.hiddenCreate');
 elements5.forEach(element => {
   observer5.observe(element);
 });
-
